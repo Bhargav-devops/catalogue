@@ -13,9 +13,9 @@ pipeline {
         timeout(time: 1, unit: 'HOURS')
         disableConcurrentBuilds()
     }
-    parameters {
-        choice(name: 'action', choices: ['apply', 'destroy'], description: 'Pick something')
-    }
+    // parameters {
+    //     choice(name: 'action', choices: ['apply', 'destroy'], description: 'Pick something')
+    // }
     stages {
         stage('Get the version') {
             steps {
